@@ -17,6 +17,20 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="./app.js"></script>
   </body>
-  <script src="./app.js"></script>
+  <script type="text/babel">
+    class ReactContainer2 extends React.Component {
+      render() {
+        return (
+          <div>
+            Hello! Welcome to Kalvium
+            <div>Let's rock and roll - this is babel</div>
+          </div>
+        );
+      }
+    }
+    const container4 = document.getElementById("reactContainer1");
+    ReactDOM.render(<ReactContainer2 />, container4);
+  </script>
 </html>
